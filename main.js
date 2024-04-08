@@ -74,14 +74,14 @@ function closePageAndOpenMain() {
     window.open('index.html', '_self'); // Open main.html in the same tab
 }
 
-// function resetTimer() {
-//     clearTimeout(inactivityTimer);
-//     inactivityTimer = setTimeout(closePageAndOpenMain, 60000); // Set a new timer for 10 seconds
-// }
+function resetTimer() {
+    clearTimeout(inactivityTimer);
+    inactivityTimer = setTimeout(closePageAndOpenMain, 60000); // Set a new timer for 10 seconds
+}
 
-// document.addEventListener('mousemove', resetTimer);
+document.addEventListener('mousemove', resetTimer);
 
-// resetTimer();
+resetTimer();
 
 
 
